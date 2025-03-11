@@ -4,6 +4,7 @@ spring batch (git-auto-commit)
 daily git auto commit application - 
 
 
+```plaintext
 git-auto-commit/
 ├── src/
 │   └── main/
@@ -20,3 +21,4 @@ git-auto-commit/
 │                           └── GitService.kt
 ├── build.gradle
 └── settings.gradle
+```
