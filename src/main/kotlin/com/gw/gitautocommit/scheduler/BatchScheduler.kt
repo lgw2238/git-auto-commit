@@ -14,8 +14,8 @@ class BatchScheduler(
     private val gitCommitJob: Job
 ) {
 
-//    @Scheduled(cron = "0 0 0 * * ?") // 매일 자정 실행
-    @Scheduled(cron = "0 * * * * ?") // 매 1분마다 실행
+    //    @Scheduled(cron = "0 0 0 * * ?") // 매일 자정 실행
+    @Scheduled(cron = "0 0 * * * ?")// 매 10분마다 실행
     fun runJob() {
         val jobParameters = JobParametersBuilder()
             .addLong("timestamp", System.currentTimeMillis())
